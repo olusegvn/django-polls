@@ -6,7 +6,7 @@ class Question(models.Model):
     publish_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"Quesiton: {self.question}"
+        return self.question
 
 
 class Choice(models.Model):
@@ -15,4 +15,4 @@ class Choice(models.Model):
     votes = models.IntegerField(default=0)
 
     def __str__(self):
-        return f'Choice: {self.choice}'
+        return self.choice
