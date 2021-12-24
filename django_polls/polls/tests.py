@@ -71,6 +71,7 @@ class QuestionIndexViewTests(TestCase):
         self.assertQuerysetEqual(response.context['latest_question_list'], [past_question])
 
     def test_future_and_past_question(self):
+
         pass
 
 

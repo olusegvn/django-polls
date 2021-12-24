@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="860c6a6d-4821-4667-b84b-87efaea3cb45" name="Default Changelist" comment="Added automated tests for views.py and constraints to views.py.">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/polls/static/polls/style.css" afterDir="false" />
+    <list default="true" id="860c6a6d-4821-4667-b84b-87efaea3cb45" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/polls/migrations/0002_auto_20211224_1546.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/polls/migrations/0003_question_was_published_recently.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/polls/migrations/0004_auto_20211224_1615.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/polls/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/polls/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/templates/polls/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/polls/templates/polls/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +126,7 @@
       <workItem from="1640277552184" duration="9907000" />
       <workItem from="1640292871176" duration="3473000" />
       <workItem from="1640333437087" duration="2950000" />
-      <workItem from="1640338659941" duration="14446000" />
+      <workItem from="1640338659941" duration="17988000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented index, results and detail page using generic view.">
       <created>1640294881542</created>
@@ -142,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640354855024</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added styles an registered Choice model.">
+      <created>1640359597681</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1640359597682</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,37 +158,38 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implemented index, results and detail page using generic view." />
     <MESSAGE value="Added automated tests for views.py and constraints to views.py." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added automated tests for views.py and constraints to views.py." />
+    <MESSAGE value="Added styles an registered Choice model." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added styles an registered Choice model." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1035" y="215" width="800" height="683" key="#Notifications" timestamp="1640277651477">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="1035" y="215" width="800" height="683" key="#Notifications/0.27.1920.1053@0.27.1920.1053" timestamp="1640277651477" />
-    <state x="86" y="167" width="942" height="913" key="CommitChangelistDialog2" timestamp="1640357581986">
+    <state x="86" y="167" width="942" height="913" key="CommitChangelistDialog2" timestamp="1640363242967">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="86" y="167" width="942" height="913" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1640357581986" />
-    <state width="888" height="278" key="GridCell.Tab.0.bottom" timestamp="1640359069046">
+    <state x="86" y="167" width="942" height="913" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1640363242967" />
+    <state width="888" height="278" key="GridCell.Tab.0.bottom" timestamp="1640361991388">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="888" height="278" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1640359069046" />
-    <state width="888" height="278" key="GridCell.Tab.0.center" timestamp="1640359069046">
+    <state width="888" height="278" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1640361991388" />
+    <state width="888" height="278" key="GridCell.Tab.0.center" timestamp="1640361991386">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="888" height="278" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1640359069046" />
-    <state width="888" height="278" key="GridCell.Tab.0.left" timestamp="1640359069046">
+    <state width="888" height="278" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1640361991386" />
+    <state width="888" height="278" key="GridCell.Tab.0.left" timestamp="1640361991385">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="888" height="278" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1640359069046" />
-    <state width="888" height="278" key="GridCell.Tab.0.right" timestamp="1640359069046">
+    <state width="888" height="278" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1640361991385" />
+    <state width="888" height="278" key="GridCell.Tab.0.right" timestamp="1640361991387">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="888" height="278" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1640359069046" />
-    <state x="1035" y="289" width="800" height="534" key="Vcs.Push.Dialog.v2" timestamp="1640354860940">
+    <state width="888" height="278" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1640361991387" />
+    <state x="1035" y="289" width="800" height="534" key="Vcs.Push.Dialog.v2" timestamp="1640359604898">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="1035" y="289" width="800" height="534" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1640354860940" />
+    <state x="1035" y="289" width="800" height="534" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1640359604898" />
     <state x="1130" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1640338687670">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
