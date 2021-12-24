@@ -1,4 +1,7 @@
+import datetime
+
 from django.db import models
+from django.utils import timezone
 
 
 class Question(models.Model):
@@ -7,6 +10,10 @@ class Question(models.Model):
 
     def __str__(self):
         return self.question
+
+    def was_published_recenetly(self):
+        now = timezone.now()
+        return now-datetime.timedelta(days=1) <= self.publish_date <= now
 
 
 class Choice(models.Model):
