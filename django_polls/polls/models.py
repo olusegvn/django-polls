@@ -5,7 +5,7 @@ from django.utils import timezone
 
 
 class Question(models.Model):
-    question = models.CharField(max_length=200)
+    question = models.CharField(max_length=200, unique=True)
     publish_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
